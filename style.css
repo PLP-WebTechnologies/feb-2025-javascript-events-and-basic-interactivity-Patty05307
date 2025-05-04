@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: lightblue;
+}
+
+#secretArea {
+    display: none;
+    background-color: lightgreen;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#easterEgg {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: lightgoldenrodyellow;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.gallery {
+    margin-top: 20px;
+}
+
+img {
+    width: 300px;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+}
+
+form input {
+    padding: 10px;
+    margin: 5px;
+    width: 250px;
+}
+
+form button {
+    padding: 10px 20px;
+    margin-top: 10px;
+}
+
+#shapeShiftBtn.circle {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+#shapeShiftBtn.square {
+    border-radius: 0%;
+    width: 100px;
+    height: 100px;
+}
+
+#shapeShiftBtn.triangle {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid #f39c12;
+}
+
+/* Confetti Animation */
+#confetti {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    animation: confettiFall 3s ease-out infinite;
+    display: none;
+}
+
+@keyframes confettiFall {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, 50%) rotate(360deg);
+        opacity: 0;
+    }
+}
+

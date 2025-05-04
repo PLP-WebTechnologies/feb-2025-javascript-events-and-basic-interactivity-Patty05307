@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Event Handling & Interactive Elements</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Interactive Playground</h1>
+
+    <!-- Magic Color Picker -->
+    <h2>Choose Your Favorite Background Color!</h2>
+    <input type="color" id="colorPicker">
+
+    <!-- Button that changes text or color -->
+    <button id="changeBtn">Click me!</button>
+
+    <!-- Hover effect button -->
+    <button id="hoverBtn">Hover over me!</button>
+
+    <!-- Keypress detection input -->
+    <input type="text" id="keypressInput" placeholder="Type something..." />
+
+    <!-- Secret action on double-click -->
+    <div id="secretArea" class="hidden">👀 Secret Revealed!</div>
+
+    <!-- Slideshow -->
+    <div class="gallery">
+        <img id="slideshow" src="https://via.placeholder.com/300" alt="Image" />
+        <button id="prevBtn">Prev</button>
+        <button id="nextBtn">Next</button>
+    </div>
+
+    <!-- Shape Shifting Button -->
+    <button id="shapeShiftBtn">Click me to change shape!</button>
+
+    <!-- Form with validation -->
+    <form id="myForm">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <input type="password" id="password" placeholder="Password (min 8 characters)" required />
+        <button type="submit">Submit</button>
+    </form>
+
+    <!-- Easter Egg -->
+    <div id="easterEgg" class="hidden">
+        🎉 Surprise! You've unlocked the secret! 🎉
+    </div>
+
+    <!-- Confetti Animation -->
+    <div id="confetti" class="hidden">🎉🎉🎉</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
